@@ -1,71 +1,61 @@
 import React from 'react';
-
+import { User , Box, Rocket } from 'lucide-react';
 const Steps = () => {
-// 1. Data Structure for the Steps
+// 1. Updated Data Structure with Lucide Components
     const stepsData = [
         {
             id: '01',
-            icon: "fa-solid fa-user-plus", // Font Awesome Icon
+            Icon: User, // Pass the component itself, not a string
             title: "Create Account",
             description: "Sign up for free in seconds. No credit card required to get started."
         },
         {
             id: '02',
-            icon: "fa-solid fa-cube", // Font Awesome Icon
+            Icon: Box, 
             title: "Choose Products",
             description: "Browse our catalog and select the tools that fit your needs."
         },
         {
             id: '03',
-            icon: "fa-solid fa-rocket", // Font Awesome Icon
+            Icon: Rocket, 
             title: "Start Creating",
             description: "Download and start using your premium tools immediately."
         }
     ];
 
     return (
-        <section className="bg-slate-50/50 py-24 px-6 md:px-12 lg:px-24">
+        <section className="bg-slate-50/50 py-24 px-6">
             <div className="max-w-7xl mx-auto">
-                
-                {/* --- Section Header (Centered) --- */}
-                <div className="text-center mb-16 max-w-2xl mx-auto">
-                    <h2 className="text-5xl font-extrabold text-slate-900 leading-tight mb-4">
-                        Get Started In 3 Steps
-                    </h2>
-                    <p className="text-lg text-gray-500 font-medium">
-                        Start using premium digital tools in minutes, not hours.
-                    </p>
+                <div className="text-center mb-16">
+                    <h2 className="text-5xl font-extrabold text-slate-900 mb-4">Get Started In 3 Steps</h2>
+                    <p className="text-lg text-gray-500">Start using premium digital tools in minutes, not hours.</p>
                 </div>
 
-                {/* --- Steps Grid (3 Columns) --- */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                    {stepsData.map((step) => (
-                        <div 
-                            key={step.id} 
-                            className="card bg-white p-10 rounded-[2.5rem] border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1 relative group"
-                        >
-                            
-                            {/* 2. Step Number (Positioned Top Right) */}
-                            <div className="absolute top-6 right-6 badge badge-lg bg-indigo-600 border-none text-white font-bold h-9 w-9 p-0 flex items-center justify-center text-sm shadow-md transition-transform group-hover:scale-110">
-                                {step.id}
-                            </div>
-                            
-                            {/* 3. Icon Wrapper (Centered, Light Background) */}
-                            <div className="w-20 h-20 bg-indigo-50 flex items-center justify-center rounded-3xl text-4xl mb-8 group-hover:bg-indigo-100 transition-colors">
-                                <i className={`${step.icon} text-indigo-600 group-hover:scale-110 transition-transform`}></i>
-                            </div>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    {stepsData.map((step) => {
+                        const { Icon } = step;
+                        
+                        return (
+                            <div key={step.id} className="card bg-white p-10 rounded-[2.5rem] border border-gray-100 shadow-sm relative group">
+                                <div className="absolute top-6 right-6 badge bg-indigo-600 border-none text-white font-bold h-9 w-9">
+                                    {step.id}
+                                </div>
+                                
+                                {/* 2. Render Lucide Icon with Tailwind classes */}
+                                <div className="w-20 h-20 bg-indigo-50 flex items-center justify-center rounded-3xl mb-8 group-hover:bg-indigo-100 transition-colors">
+                                    <Icon 
+                                        size={36} 
+                                        className="text-indigo-600 transition-transform group-hover:scale-110" 
+                                        strokeWidth={1.5} 
+                                    />
+                                </div>
 
-                            {/* 4. Text Content (Centered, Bold Headings) */}
-                            <h3 className="text-2xl font-bold text-slate-800 mb-3 text-center">
-                                {step.title}
-                            </h3>
-                            <p className="text-gray-500 text-sm leading-relaxed text-center font-medium max-w-sm mx-auto flex-grow">
-                                {step.description}
-                            </p>
-                        </div>
-                    ))}
+                                <h3 className="text-2xl font-bold text-slate-800 mb-3 text-center">{step.title}</h3>
+                                <p className="text-gray-500 text-sm text-center leading-relaxed">{step.description}</p>
+                            </div>
+                        );
+                    })}
                 </div>
-
             </div>
         </section>
     );
