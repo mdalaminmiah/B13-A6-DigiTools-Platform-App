@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Play } from 'lucide-react';
 const Hero = () => {
     return (
     <div className="hero min-h-[80vh] bg-base-100 px-6 md:px-12 lg:px-24 pt-8 pb-8">
@@ -42,7 +42,11 @@ const Hero = () => {
               Explore Products
             </button>
             <button className="btn btn-outline border-indigo-200 hover:bg-indigo-50 hover:border-indigo-600 hover:text-indigo-600 rounded-full px-8 h-14 normal-case text-lg font-bold group">
-              <i className="fa-regular fa-circle-play mr-2 text-indigo-600 group-hover:scale-110 transition-transform"></i>
+             <Play 
+                size={16} 
+                className="mr-2 text-indigo-600 group-hover:scale-110 transition-transform" 
+                strokeWidth={2}
+            />
               Watch Demo
             </button>
           </div>

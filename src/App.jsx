@@ -44,7 +44,7 @@ function App() {
     <>
       <div className="bg-slate-50 min-h-screen">
             {/* Notifications system */}
-            <ToastContainer position="top-center" autoClose={1500} />
+            <ToastContainer position="top-center" autoClose={50} />
             
             {/* Fixed Layout Components */}
             <Navbar cartCount={cart.length} />
