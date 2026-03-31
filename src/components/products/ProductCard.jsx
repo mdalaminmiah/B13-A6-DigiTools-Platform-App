@@ -5,9 +5,18 @@ const ProductCard = ({ product, handleAddToCart }) => {
 
     return (
         <div className="card bg-white border border-gray-100 p-8 rounded-[2.5rem] shadow-sm hover:shadow-2xl transition-all duration-300 relative flex flex-col h-full group">
-            <div className={`absolute top-6 right-6 badge badge-${tagType} border-none font-bold px-4 py-3 shadow-sm`}>
+        <div className="absolute top-6 right-6 z-10">
+            <div className={`
+                badge border-none font-black text-[10px] uppercase tracking-widest px-3 py-3 shadow-sm rounded-full
+                ${tagType === 'warning' ? 'bg-amber-100 text-amber-700' : 
+                tagType === 'secondary' ? 'bg-purple-100 text-purple-700' :
+                tagType === 'success' ? 'bg-emerald-100 text-emerald-700' : 
+                tagType === 'primary' ? 'bg-blue-100 text-blue-700' : 
+                'bg-slate-100 text-slate-600'}  
+            `}>
                 {tag}
             </div>
+        </div>
             <div className="w-16 h-16 bg-indigo-50 flex items-center justify-center rounded-2xl text-4xl mb-6 group-hover:scale-110 transition-transform">
                 {icon}
             </div>

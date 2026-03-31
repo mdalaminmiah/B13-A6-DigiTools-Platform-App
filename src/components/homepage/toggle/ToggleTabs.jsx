@@ -33,7 +33,7 @@ const ToggleTabs = ({ activeTab, setActiveTab, cartCount }) => {
           Cart 
           <span className={`px-2 py-0.5 rounded-full text-xs transition-colors
             ${activeTab === 'cart' ? 'bg-white text-indigo-600' : 'bg-gray-200 text-gray-600'}`}>
-            {cartCount}
+            ({cartCount})
           </span>
         </button>
 
