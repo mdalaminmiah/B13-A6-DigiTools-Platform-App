@@ -34,7 +34,7 @@
     "name": "Premium Stock Assets",
     "description": "Access millions of royalty-free photos, videos, and graphics.",
     "price": 19,
-    "period": "Mo",
+    "period": "Monthly",
     "tag": "New",
     "tagType": "success",
     "features": [
@@ -49,7 +49,7 @@
     "name": "Automation Toolkit",
     "description": "Automate repetitive tasks and streamline your workflow.",
     "price": 79,
-    "period": "Mo",
+    "period": "Monthly",
     "tag": "Popular",
     "tagType": "secondary",
     "features": [
@@ -79,7 +79,7 @@
     "name": "Social Media Kit",
     "description": "Complete toolkit for creating engaging social media content.",
     "price": 39,
-    "period": "Mo",
+    "period": "Monthly",
     "tag": "Best Seller",
     "tagType": "warning",
     "features": [
@@ -94,7 +94,7 @@
     "name": "SEO Master Suite",
     "description": "Rank higher on Google with advanced keyword research and audit tools.",
     "price": 59,
-    "period": "Mo",
+    "period": "Monthly",
     "tag": "Expert",
     "tagType": "primary",
     "features": [
@@ -109,7 +109,7 @@
     "name": "Video Editor Cloud",
     "description": "Professional video editing directly in your web browser.",
     "price": 25,
-    "period": "Mo",
+    "period": "Monthly",
     "tag": "Creative",
     "tagType": "secondary",
     "features": [
@@ -139,7 +139,7 @@
     "name": "Code Snippet Manager",
     "description": "Save and organize your most used code blocks across all devices.",
     "price": 9,
-    "period": "Mo",
+    "period": "Monthly",
     "tag": "Dev Tool",
     "tagType": "primary",
     "features": [
@@ -154,7 +154,7 @@
     "name": "Email Marketing Bot",
     "description": "Build massive email lists and automate your sequences easily.",
     "price": 45,
-    "period": "Mo",
+    "period": "Monthly",
     "tag": "Growth",
     "tagType": "success",
     "features": [
@@ -199,7 +199,7 @@
     "name": "Podcast Hosting Pro",
     "description": "Everything you need to record, host, and distribute your podcast.",
     "price": 12,
-    "period": "Mo",
+    "period": "Monthly",
     "tag": "New",
     "tagType": "success",
     "features": [
@@ -214,7 +214,7 @@
     "name": "Virtual Meeting AI",
     "description": "AI-powered notes and summaries for your online meetings.",
     "price": 19,
-    "period": "Mo",
+    "period": "Monthly",
     "tag": "Productivity",
     "tagType": "warning",
     "features": [
