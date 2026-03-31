@@ -2,7 +2,7 @@ import React from 'react';
 import { Play } from 'lucide-react';
 const Hero = () => {
     return (
-    <div className="hero min-h-[80vh] bg-base-100 px-6 md:px-12 lg:px-24 pt-8 pb-8">
+    <div className="hero min-h-[70vh] bg-base-100 px-6 md:px-12 lg:px-24 pt-8 pb-8">
       <div className="hero-content flex-col lg:flex-row gap-12 p-0">
             <div className="flex-1 text-left">
                 <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-50 border border-indigo-100 mb-6">
@@ -13,8 +13,8 @@ const Hero = () => {
                     <span className="text-sm font-semibold text-indigo-700">New: AI-Powered Tools Available</span>
                 </div>
                 <h1 className="text-5xl lg:text-7xl font-extrabold text-slate-900 leading-tight mb-6">
-                    Supercharge Your <br /> 
-                    <span className="text-indigo-600">Digital Workflow</span>
+                    Supercharge Your
+                    Digital Workflow
                 </h1>
                 <p className="text-lg text-gray-500 max-w-md mb-8 leading-relaxed">
                     Access premium AI tools, design assets, templates, and productivity
