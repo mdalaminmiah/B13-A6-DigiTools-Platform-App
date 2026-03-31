@@ -34,7 +34,7 @@ function App() {
     const handleCheckout = () => {
         setCart([]);
         toast.info("Order placed successfully!");
-        setActiveTab('products');
+        setActiveTab('cart');
     };
 
   return (
