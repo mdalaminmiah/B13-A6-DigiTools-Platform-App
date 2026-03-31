@@ -3,12 +3,10 @@ import { ShoppingCart } from 'lucide-react';
 const Navbar = ({cartCount}) => {
     return (
     <div className="navbar bg-base-100 px-4 md:px-12 border-b border-gray-100 py-4">
-      {/* Brand Logo */}
       <div className="flex-1">
         <a className="text-3xl cursor-pointer bg-linear-to-r from-indigo-500 to-purple-600 bg-clip-text text-transparent font-black">DigiTools</a>
       </div>
 
-      {/* Center Links (Visible on desktop) */}
       <div className="flex-none hidden lg:block mr-12">
         <ul className="menu menu-horizontal px-1 gap-8 text-gray-600 font-medium">
           <li><a className="hover:text-indigo-600">Products</a></li>
