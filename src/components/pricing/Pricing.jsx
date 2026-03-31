@@ -1,4 +1,5 @@
 import React from 'react';
+import { Check } from 'lucide-react';
 
 const Pricing = () => {
     const plans = [
@@ -40,7 +41,7 @@ const Pricing = () => {
                 key={index}
                 className={`relative p-10 rounded-[2.5rem] border transition-all duration-300 ${
                 plan.isPopular 
-                ? 'bg-indigo-600 text-white shadow-2xl scale-105 z-10 border-none' 
+                ? 'bg-linear-to-r from-indigo-500 to-purple-600  text-white shadow-2xl scale-105 z-10 border-none' 
                 : 'bg-white text-slate-900 border-gray-100 shadow-sm hover:shadow-lg'
                 }`}
             >
@@ -61,7 +62,7 @@ const Pricing = () => {
                 <ul className="space-y-4 mb-10 text-left">
                 {plan.features.map((feature, i) => (
                     <li key={i} className="flex items-center gap-3">
-                    <i className={`fa-solid fa-check ${plan.isPopular ? 'text-white' : 'text-green-500'}`}></i>
+                    <Check size={16} className={`${plan.isPopular ? 'text-white' : 'text-green-500'}`} strokeWidth={3} />
                     <span className="font-medium text-sm">{feature}</span>
                     </li>
                 ))}
@@ -70,7 +71,7 @@ const Pricing = () => {
                 <button className={`w-full py-4 rounded-2xl font-bold text-lg transition-all ${
                 plan.isPopular 
                 ? 'bg-white text-indigo-600 hover:bg-gray-50' 
-                : 'bg-indigo-600 text-white hover:bg-indigo-700'
+                : 'bg-linear-to-r from-indigo-500 to-purple-600 text-white hover:bg-indigo-700'
                 }`}>
                 {plan.buttonText}
                 </button>

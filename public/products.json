@@ -7,7 +7,11 @@
     "period": "Mo",
     "tag": "Best Seller",
     "tagType": "warning",
-    "features": ["Unlimited AI generations", "50+ writing templates", "Grammar checker"],
+    "features": [
+      { "id": 101, "text": "Unlimited AI generations" },
+      { "id": 102, "text": "50+ writing templates" },
+      { "id": 103, "text": "Grammar checker" }
+    ],
     "icon": "📝"
   },
   {
@@ -18,7 +22,11 @@
     "period": "One-Time",
     "tag": "Popular",
     "tagType": "secondary",
-    "features": ["2000+ templates", "Monthly updates", "Commercial license"],
+    "features": [
+      { "id": 201, "text": "2000+ templates" },
+      { "id": 202, "text": "Monthly updates" },
+      { "id": 203, "text": "Commercial license" }
+    ],
     "icon": "🎨"
   },
   {
@@ -29,7 +37,11 @@
     "period": "Mo",
     "tag": "New",
     "tagType": "success",
-    "features": ["10M+ assets", "Commercial use", "No attribution"],
+    "features": [
+      { "id": 301, "text": "10M+ assets" },
+      { "id": 302, "text": "Commercial use" },
+      { "id": 303, "text": "No attribution" }
+    ],
     "icon": "📷"
   },
   {
@@ -40,7 +52,11 @@
     "period": "Mo",
     "tag": "Popular",
     "tagType": "secondary",
-    "features": ["50+ automations", "API access", "Custom workflows"],
+    "features": [
+      { "id": 401, "text": "50+ automations" },
+      { "id": 402, "text": "API access" },
+      { "id": 403, "text": "Custom workflows" }
+    ],
     "icon": "⚙️"
   },
   {
@@ -51,7 +67,11 @@
     "period": "One-Time",
     "tag": "New",
     "tagType": "success",
-    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "features": [
+      { "id": 501, "text": "100+ templates" },
+      { "id": 502, "text": "ATS optimization" },
+      { "id": 503, "text": "Export to PDF" }
+    ],
     "icon": "📄"
   },
   {
@@ -62,7 +82,146 @@
     "period": "Mo",
     "tag": "Best Seller",
     "tagType": "warning",
-    "features": ["5000+ assets", "Scheduler included", "Analytics dashboard"],
+    "features": [
+      { "id": 601, "text": "5000+ assets" },
+      { "id": 602, "text": "Scheduler included" },
+      { "id": 603, "text": "Analytics dashboard" }
+    ],
     "icon": "📱"
+  },
+  {
+    "id": 7,
+    "name": "SEO Master Suite",
+    "description": "Rank higher on Google with advanced keyword research and audit tools.",
+    "price": 59,
+    "period": "Mo",
+    "tag": "Expert",
+    "tagType": "primary",
+    "features": [
+      { "id": 701, "text": "Keyword explorer" },
+      { "id": 702, "text": "Backlink checker" },
+      { "id": 703, "text": "Site audit reports" }
+    ],
+    "icon": "🚀"
+  },
+  {
+    "id": 8,
+    "name": "Video Editor Cloud",
+    "description": "Professional video editing directly in your web browser.",
+    "price": 25,
+    "period": "Mo",
+    "tag": "Creative",
+    "tagType": "secondary",
+    "features": [
+      { "id": 801, "text": "4K exporting" },
+      { "id": 802, "text": "Stock music library" },
+      { "id": 803, "text": "Multi-track editing" }
+    ],
+    "icon": "🎬"
+  },
+  {
+    "id": 9,
+    "name": "E-book Creator Pro",
+    "description": "Turn your ideas into professional E-books and PDFs instantly.",
+    "price": 35,
+    "period": "One-Time",
+    "tag": "Hot",
+    "tagType": "warning",
+    "features": [
+      { "id": 901, "text": "Drag-and-drop editor" },
+      { "id": 902, "text": "Kindle formatting" },
+      { "id": 903, "text": "Custom covers" }
+    ],
+    "icon": "📚"
+  },
+  {
+    "id": 10,
+    "name": "Code Snippet Manager",
+    "description": "Save and organize your most used code blocks across all devices.",
+    "price": 9,
+    "period": "Mo",
+    "tag": "Dev Tool",
+    "tagType": "primary",
+    "features": [
+      { "id": 1001, "text": "Syntax highlighting" },
+      { "id": 1002, "text": "Cloud sync" },
+      { "id": 1003, "text": "Team sharing" }
+    ],
+    "icon": "💻"
+  },
+  {
+    "id": 11,
+    "name": "Email Marketing Bot",
+    "description": "Build massive email lists and automate your sequences easily.",
+    "price": 45,
+    "period": "Mo",
+    "tag": "Growth",
+    "tagType": "success",
+    "features": [
+      { "id": 1101, "text": "A/B testing" },
+      { "id": 1102, "text": "Landing page builder" },
+      { "id": 1103, "text": "Unlimited contacts" }
+    ],
+    "icon": "📧"
+  },
+  {
+    "id": 12,
+    "name": "UI/UX Component Lab",
+    "description": "Pre-built React and Tailwind components for faster development.",
+    "price": 89,
+    "period": "One-Time",
+    "tag": "Best Value",
+    "tagType": "secondary",
+    "features": [
+      { "id": 1201, "text": "Vite & Next.js ready" },
+      { "id": 1202, "text": "Dark mode support" },
+      { "id": 1203, "text": "Figma files included" }
+    ],
+    "icon": "💎"
+  },
+  {
+    "id": 13,
+    "name": "Cyber Security Suite",
+    "description": "Protect your digital assets with advanced encryption and monitoring.",
+    "price": 120,
+    "period": "Yr",
+    "tag": "Secure",
+    "tagType": "primary",
+    "features": [
+      { "id": 1301, "text": "Real-time scanning" },
+      { "id": 1302, "text": "VPN access" },
+      { "id": 1303, "text": "Password manager" }
+    ],
+    "icon": "🛡️"
+  },
+  {
+    "id": 14,
+    "name": "Podcast Hosting Pro",
+    "description": "Everything you need to record, host, and distribute your podcast.",
+    "price": 12,
+    "period": "Mo",
+    "tag": "New",
+    "tagType": "success",
+    "features": [
+      { "id": 1401, "text": "One-click distribution" },
+      { "id": 1402, "text": "Audio enhancement" },
+      { "id": 1403, "text": "Detailed analytics" }
+    ],
+    "icon": "🎙️"
+  },
+  {
+    "id": 15,
+    "name": "Virtual Meeting AI",
+    "description": "AI-powered notes and summaries for your online meetings.",
+    "price": 19,
+    "period": "Mo",
+    "tag": "Productivity",
+    "tagType": "warning",
+    "features": [
+      { "id": 1501, "text": "Auto-transcription" },
+      { "id": 1502, "text": "Action item extraction" },
+      { "id": 1503, "text": "Multi-language support" }
+    ],
+    "icon": "🤝"
   }
 ]

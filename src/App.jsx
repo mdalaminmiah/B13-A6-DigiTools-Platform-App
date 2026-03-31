@@ -13,11 +13,9 @@ import Footer from './components/footer/Footer';
 import FinelFooter from './components/footer/FinelFooter';
 
 function App() {
-    // 1. Manage Global State
     const [activeTab, setActiveTab] = useState('products');
     const [cart, setCart] = useState([]);
 
-    // 2. Logic Functions
     const handleAddToCart = (product) => {
         const isExist = cart.find(item => item.id === product.id);
         if (!isExist) {
@@ -39,36 +37,25 @@ function App() {
         setActiveTab('products');
     };
 
-
   return (
     <>
       <div className="bg-slate-50 min-h-screen">
-            {/* Notifications system */}
-            <ToastContainer position="top-center" autoClose={50} />
-            
-            {/* Fixed Layout Components */}
             <Navbar cartCount={cart.length} />
-            <Hero />
+            <Hero /> 
             <Stats />
-
-            {/* Toggling Section */}
             <ToggleTabs 
                 activeTab={activeTab} 
                 setActiveTab={setActiveTab} 
                 cartCount={cart.length} 
             />
-
-            {/* Main Content Area: Switches between Products & Cart */}
             <main className="max-w-7xl mx-auto px-6 pb-24">
                 {activeTab === 'products' ? (
                     <>
-                        {/* These two show up together when Products is active */}
-                        <ProductContainer handleAddToCart={handleAddToCart} />
+                        <ProductContainer handleAddToCart={handleAddToCart} toast={toast} />
                         <Steps /> 
                         <Pricing/>
                     </>
                 ) : (
-                    /* This shows up alone when Cart is active */
                     <CartContainer 
                         cart={cart} 
                         onRemove={handleRemove} 
@@ -76,14 +63,17 @@ function App() {
                     />
                 )}
             </main>
-
-            {/* Footer / CTA Section */}
             <Footer />
             <FinelFooter/>
         </div>
 
-
-      <ToastContainer/>
+        <ToastContainer 
+            position="top-right" 
+            autoClose={2000} 
+            pauseOnHover={false}
+            pauseOnFocusLoss={false} 
+            theme="light"
+        />
     </>
   )
 }

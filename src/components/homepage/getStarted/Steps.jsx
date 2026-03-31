@@ -1,11 +1,10 @@
 import React from 'react';
 import { User , Box, Rocket } from 'lucide-react';
 const Steps = () => {
-// 1. Updated Data Structure with Lucide Components
     const stepsData = [
         {
             id: '01',
-            Icon: User, // Pass the component itself, not a string
+            Icon: User,
             title: "Create Account",
             description: "Sign up for free in seconds. No credit card required to get started."
         },
@@ -37,11 +36,9 @@ const Steps = () => {
                         
                         return (
                             <div key={step.id} className="card bg-white p-10 rounded-[2.5rem] border border-gray-100 shadow-sm relative group">
-                                <div className="absolute top-6 right-6 badge bg-indigo-600 border-none text-white font-bold h-9 w-9">
+                                <div className="absolute top-6 right-6 badge bg-linear-to-r from-indigo-500 to-purple-600 border-none text-white font-bold h-9 w-9">
                                     {step.id}
                                 </div>
-                                
-                                {/* 2. Render Lucide Icon with Tailwind classes */}
                                 <div className="w-20 h-20 bg-indigo-50 flex items-center justify-center rounded-3xl mb-8 group-hover:bg-indigo-100 transition-colors">
                                     <Icon 
                                         size={36} 

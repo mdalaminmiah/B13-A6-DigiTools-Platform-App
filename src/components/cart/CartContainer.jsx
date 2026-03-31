@@ -59,7 +59,7 @@ const CartContainer = ({ cart, onRemove, onCheckout }) => {
           {/* Large Action Button */}
           <button 
             onClick={onCheckout}
-            className="btn bg-indigo-600 hover:bg-indigo-700 text-white border-none w-full rounded-2xl h-16 text-xl font-bold shadow-lg shadow-indigo-100 normal-case"
+            className="btn bg-linear-to-r from-indigo-500 to-purple-600 hover:bg-indigo-700 text-white border-none w-full rounded-2xl h-16 text-xl font-bold shadow-lg shadow-indigo-100 normal-case"
           >
             Proceed To Checkout
           </button>

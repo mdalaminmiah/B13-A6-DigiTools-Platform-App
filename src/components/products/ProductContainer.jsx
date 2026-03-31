@@ -6,17 +6,22 @@ const ProductContainer = ({ handleAddToCart }) => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        // Fetching data from the public folder
-        fetch('./products.json')
-            .then((res) => {
-                if (!res.ok) throw new Error("Failed to load data");
-                return res.json();
-            })
-            .then((data) => {
+        const fetchProducts = async () => {
+            try {
+                const response = await fetch('./products.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
                 setProducts(data);
+            } catch (error) {
+                console.log("Could not fetch products:", error);
+            } finally {
                 setLoading(false);
-            })
-            .catch((err) => console.error(err));
+            }
+        };
+
+        fetchProducts();
     }, []);
 
     if (loading) {
