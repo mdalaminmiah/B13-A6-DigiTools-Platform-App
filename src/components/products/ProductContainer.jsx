@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ProductCard from './ProductCard';
 
-const ProductContainer = ({ handleAddToCart }) => {
+const ProductContainer = ({ handleAddToCart,cart }) => {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
 
@@ -39,6 +39,7 @@ const ProductContainer = ({ handleAddToCart }) => {
                     key={product.id} 
                     product={product} 
                     handleAddToCart={handleAddToCart} 
+                    cart = {cart}
                 />
             ))}
         </div>

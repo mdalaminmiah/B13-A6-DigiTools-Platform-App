@@ -19,10 +19,10 @@ function App() {
     const handleAddToCart = (product) => {
         const isExist = cart.find(item => item.id === product.id);
         if (!isExist) {
-        setCart([...cart, product]);
-        toast.success(`${product.name} added to cart!`);
+            setCart([...cart, product]);
+            toast.success(`${product.name} added to cart!`);
         } else {
-        toast.error("Already in your cart!");
+            toast.error("Already in your cart!");
         }
     };
 
@@ -51,7 +51,7 @@ function App() {
             <main className="max-w-7xl mx-auto px-6 pb-24">
                 {activeTab === 'products' ? (
                     <>
-                        <ProductContainer handleAddToCart={handleAddToCart} toast={toast} />
+                        <ProductContainer handleAddToCart={handleAddToCart} cart = {cart} toast={toast} />
                         <Steps /> 
                         <Pricing/>
                     </>
