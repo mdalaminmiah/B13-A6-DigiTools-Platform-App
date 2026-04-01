@@ -9,8 +9,6 @@ const CartContainer = ({ cart, onRemove, onCheckout }) => {
       </div>
     );
   }
-
-
   const totalPrice = cart.reduce((sum, item) => sum + item.price, 0);
 
   return (
